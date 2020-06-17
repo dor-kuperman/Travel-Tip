@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>TravelTip</title>
+</head>
+
+<body>
+    <main class="main-container">
+
+        <div class="first-block">
+            <h1>TravelTip</h1>
+            <input type="text" placeholder="Enter Location">
+            <button class="search-btn">Go</button>
+            <button class="my-location-btn">My Location</button>
+        </div>
+        <div class="second-block">
+            <h2></h2>
+            <p></p>
+            <button class="copy-button">Copy Location</button>
+        </div>
+        <div class="third-block">
+            <div class="weather-container">
+                <h3>Search for a location to see it's weather today</h3>
+                <img class="weather-icon" src="">
+                <p class="location"></p>
+                <img class="flag">
+                <p class="temp"></p>
+            </div>
+            <div id="map" style="width: 50%; height: 400px;"></div>
+        </div>
+    </main>
+    <script src="lib/axios.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
